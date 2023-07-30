@@ -4,7 +4,10 @@
     "name": "WhatsApp Categories",
     "options_page": "index.html",
     "devtools_page": "src/devtools.html",
-    "action": {
-        "default_popup": "index.html"
-    }
+    "content_scripts": [
+        {
+          "js": ["src/content.ts"],
+          "matches": ["https://web.whatsapp.com/*"]
+        }
+      ]
 }
