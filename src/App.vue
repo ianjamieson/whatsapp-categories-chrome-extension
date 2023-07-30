@@ -1,22 +1,15 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
+
 </script>
 
 <template>
-  Do something here
+  <div class="w-[500px] p-6">
+    <h1 class="text-xl">
+      WhatsApp Categories
+    </h1>
+    <p />
+    add multiple categories with inclusion or exclusion
+    add settings to display a default category
+    categories should be in a dropdown
+  </div>
 </template>
-
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
-</style>

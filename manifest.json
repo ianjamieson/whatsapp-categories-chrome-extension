@@ -1,6 +1,10 @@
 {
     "manifest_version": 3,
-    "name": "WhatsApp Categories",
     "version": "0.0.1",
-    "action": { "default_popup": "index.html" }
+    "name": "WhatsApp Categories",
+    "options_page": "index.html",
+    "devtools_page": "src/devtools.html",
+    "action": {
+        "default_popup": "index.html"
+    }
 }
