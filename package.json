@@ -13,15 +13,18 @@
   },
   "devDependencies": {
     "@crxjs/vite-plugin": "^2.0.0-beta.18",
+    "@tixel/pinia-entity": "^0.0.9",
     "@vitejs/plugin-vue": "^4.2.3",
     "autoprefixer": "^10.4.14",
     "eslint": "^8.46.0",
     "eslint-plugin-vue": "^9.16.0",
+    "flat": "^5.0.2",
     "pinia": "^2.1.6",
     "postcss": "^8.4.27",
     "tailwindcss": "^3.3.3",
     "typescript": "^5.0.2",
     "vite": "^4.4.5",
+    "vue-router": "^4.2.4",
     "vue-tsc": "^1.8.5"
   }
 }

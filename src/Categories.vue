@@ -1,7 +1,11 @@
 <script setup lang="ts">
-import CategoryLabel from './components/CategoryLabel.vue';
+import CategoryLabel from './components/whatsappUi/CategoryLabel.vue.js';
+import { useCategoryStore } from './stores/CategoryStore';
+const categoryStore = useCategoryStore();
+
+
 // todo come from store
-const categories: Category[] = [
+const categories = [
   {
     name: 'All',
     type: 'whitelist',

@@ -5,9 +5,10 @@
     "options_page": "index.html",
     "devtools_page": "src/devtools.html",
     "content_scripts": [
-        {
-          "js": ["src/content.ts"],
-          "matches": ["https://web.whatsapp.com/*"]
-        }
-      ]
+      {
+        "js": ["src/content.ts"],
+        "matches": ["https://web.whatsapp.com/*"]
+      }
+    ],
+    "action": { "default_popup": "index.html" }
 }
