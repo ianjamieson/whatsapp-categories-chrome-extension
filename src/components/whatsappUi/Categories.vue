@@ -1,8 +1,7 @@
 <script setup lang="ts">
-import CategoryLabel from './components/whatsappUi/CategoryLabel.vue.js';
-import { useCategoryStore } from './stores/CategoryStore';
+import Category from './Category.vue';
+import { useCategoryStore } from '../../stores/CategoryStore';
 const categoryStore = useCategoryStore();
-
 
 // todo come from store
 const categories = [
@@ -32,13 +31,11 @@ const categories = [
       WhatsApp Categories
     </p>
     <div class="flex space-x-2 font-semibold">
-      <CategoryLabel
-        v-for="category in categories"
+      <Category
+        v-for="category in categoryStore.getAll"
         :key="category.name"
         :category="category"
-      >
-        {{ category.name }}
-      </CategoryLabel>
+      />
     </div>
   </div>
 </template>

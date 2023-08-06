@@ -12,8 +12,9 @@ import { useWaitForWhatsAppLoad } from './composables/useWaitForWhatsAppLoad';
 // // });
 
 import { createApp } from 'vue';
-import Categories from './Categories.vue';
+import Categories from './components/whatsappUi/Categories.vue';
 import { useInsertBefore } from './composables/useInsertBefore';
+import { createPinia } from 'pinia';
 import './style.css';
 
 useWaitForWhatsAppLoad(() => {
@@ -22,5 +23,7 @@ useWaitForWhatsAppLoad(() => {
 
   // mount vue
   const app = createApp(Categories);
+  const pinia = createPinia();
+  app.use(pinia);
   app.mount('#wac-categories');
 });

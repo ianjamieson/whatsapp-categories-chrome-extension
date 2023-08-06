@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import ButtonLabel from '../ui/ButtonLabel.vue.js';
+import ButtonLabel from '../ui/ButtonLabel.vue';
 const props = defineProps<{
   category: Category,
 }>();
@@ -82,11 +82,11 @@ const select = () => {
 <template>
   <ButtonLabel
           :class="{
-            [props.category.settings.color]: true,
+            [props.category.color]: true,
             'opacity-50': !selected,
           }"
           @click.prevent="select()">
-    <slot />
+    {{ props.category.name }} {{ props.category.color }}
   </ButtonLabel>
 </template>
 

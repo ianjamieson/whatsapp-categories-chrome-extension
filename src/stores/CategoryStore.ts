@@ -5,6 +5,7 @@ export interface Category {
     name?: string;
     type: 'whitelist' | 'blacklist';
     color: string;
+    matches: string[];
 }
 const adapter = createAdapter<Category>('id');
 
@@ -20,12 +21,14 @@ const exampleState: CategoryStoreState = {
             name: 'All',
             type: 'blacklist',
             color: 'bg-gray-300',
+            matches: [],
         },
         '2': {
             id: 2,
             name: 'Filtered',
             type: 'blacklist',
             color: 'bg-red-300',
+            matches: ['Ian / Tom / Ian', 'Ian / Nat']
         },
     },
 };

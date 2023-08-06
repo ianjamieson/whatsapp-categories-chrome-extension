@@ -3,7 +3,7 @@
 import { Category } from '../stores/CategoryStore';
 import ButtonLabel from './ui/ButtonLabel.vue';
 defineProps<{
-  category: Category;
+  category: Category
 }>();
 </script>
 
